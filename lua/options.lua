@@ -1,8 +1,10 @@
 local opt = vim.opt
 
--- line number opt.nu = true
+-- number & sign
 opt.nu = true
 opt.rnu = true
+opt.scl = "auto"
+opt.stc = '%=%{v:relnum?v:relnum:v:lnum} %s'
 
 -- tabs & indentation
 opt.softtabstop = 4
@@ -26,9 +28,6 @@ opt.encoding = 'utf-8'
 -- scroll setting
 opt.scrolloff = 3
 opt.sidescrolloff = 5
-
--- appearance
-opt.signcolumn = "yes"
 
 -- clipboard
 opt.clipboard:append("unnamedplus")
