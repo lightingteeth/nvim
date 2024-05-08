@@ -10,9 +10,11 @@ function M.setup()
 end
 
 function M.config()
-  require("nvim-tree").setup({
-    
-  })
+  local api = require "nvim-tree.api"
+  require("nvim-tree").setup{
+
+  }
+
 end
 
 return M

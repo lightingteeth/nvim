@@ -45,4 +45,10 @@ require("lazy").setup({
 
   -- 中文输入法处理
   { "ybian/smartim", config = function() vim.cmd([[let g:smartim_default = "com.apple.keylayout.ABC"]]) end, },
+
+  -- 虚拟多光标
+  { "mg979/vim-visual-multi", branch="master"},
+
+  -- indent line
+  -- { "lukas-reineke/indent-blankline.nvim", main = "ibl", config = function() require("ibl").setup() end, },
 })
